@@ -1,0 +1,116 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(63, 79, 68, 0.7)); /* Updated to dark sage green */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(63, 79, 68, 0.7)); /* Updated to dark sage green */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: rgba(248, 245, 233, 0.8); /* Cream background */
+  border: 1px solid rgba(63, 79, 68, 0.2); /* Dark sage green border */
+}
+
+.read-the-docs {
+  color: #3F4F44; /* Dark sage green */
+}
+
+/* New custom styles for the updated color palette */
+.btn-primary {
+  background-color: #3F4F44;
+  color: #F8F5E9;
+}
+
+.btn-accent {
+  background-color: #3F4F44;
+  color: #F8F5E9;
+}
+
+.text-accent {
+  color: #3F4F44;
+}
+
+.bg-cream {
+  background-color: #F8F5E9;
+}
+
+.bg-sage {
+  background-color: #3F4F44;
+}
+
+/* Animation classes */
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.delay-75 {
+  animation-delay: 0.75s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
